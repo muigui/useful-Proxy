@@ -3,7 +3,7 @@
     "muigui/useful-Observer": "master",
     "muigui/useful-copy": "master"
   },
-  "description": "useful proxy",
+  "description": "useful proxy to provide common API for working with different types of data",
   "development": {
     "chaijs/chai": "latest",
     "visionmedia/mocha": "latest"
