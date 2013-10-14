@@ -1,0 +1,39 @@
+{
+	"author"          : {
+		"name"        : "constantology",
+		"email"       : "christos@muigui.com",
+		"url"         : "http://muigui.com"
+	},
+	"description"     : "useful proxy to provide common API for working with different types of data",
+    "dependencies"    : {
+		"useful-copy"     : "latest",
+		"useful-observer" : "latest"
+    },
+	"devDependencies" : {
+		"chai"                 : "latest",
+		"grunt"                : "latest",
+		"grunt-contrib-concat" : "latest",
+		"grunt-contrib-uglify" : "latest",
+		"grunt-contrib-watch"  : "latest",
+		"mocha"                : "latest"
+	},
+	"engines"         : {
+		"node"        : ">= 0.8.x"
+	},
+	"keywords"        : ["proxy"],
+	"licenses"        : [ {
+		"type"        : "MIT",
+	     "url"        : "https://raw.github.com/muigui/useful-Proxy/master/LICENSE"
+	} ],
+	"main"            : "./index.js",
+	"name"            : "useful-proxy",
+	"private"         : true,
+	"repository"      : {
+		"type"        : "git",
+		"url"         : "git@github.com:muigui/useful-Proxy.git"
+	},
+	"scripts"         : {
+		"test"        : "mocha -c --ignore-leaks -R spec -u tdd ./test/runner.js"
+	},
+	"version"         : "0.0.1"
+}

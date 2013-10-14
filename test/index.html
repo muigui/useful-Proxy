@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>muigui/useful-Proxy</title>
+		<link href="../node_modules/mocha/mocha.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="mocha"></div>
+
+		<script src="../node_modules/mocha/mocha.js"     type="text/javascript"></script>
+		<script src="../node_modules/chai/chai.js"       type="text/javascript"></script>
+
+		<script type="text/javascript">
+			mocha.setup( {
+				ignoreLeaks : true,
+				ui          : 'tdd'
+			} );
+		</script>
+
+		<script src="lib/jquery.js"     type="text/javascript"></script>
+
+		<script src="../build/build.js" type="text/javascript"></script>
+
+		<script type="text/javascript">
+			var Proxy  = require( 'useful-Proxy' ),
+				expect = chai.expect;
+		</script>
+
+		<script src="Proxy.test.js"      type="text/javascript"></script>
+		<script src="Proxy.Ajax.test.js" type="text/javascript"></script>
+
+		<script type="text/javascript">
+			mocha.run();
+		</script>
+	</body>
+</html>
